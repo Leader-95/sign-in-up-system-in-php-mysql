@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="includes/signup.inc.php" method="post">
+    <form action="signup.inc.php" method="post">
         <input type="text" name='name' placeholder="Enter username"><br>
         <input type="email" name='email' placeholder="Enter email"><br>
         <input type="password" name='pwd' placeholder="Enter password"><br>
