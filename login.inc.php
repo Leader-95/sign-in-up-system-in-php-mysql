@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 
   if (!$row) {
     // The user does not exist
-    header('Location: ../login.php?error=usernotexists');
+    header('Location: login.php?error=usernotexists');
     exit();
   }
 
@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
   $hash = $row['password'];
   if (!password_verify($pwd, $hash)) {
     // The password is incorrect
-    header('Location: ../login.php?error=incorrectpassword');
+    header('Location: login.php?error=incorrectpassword');
     exit();
   }
 
@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
 
 
   // Redirect the user to the home page or another page where you want to give them access to logged-in users
-  header('Location: ../index.php');
+  header('Location: index.php');
   exit();
 }
 ?>
